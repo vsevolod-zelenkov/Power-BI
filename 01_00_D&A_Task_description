@@ -1,0 +1,80 @@
+Data Sources
+	Coffee_data.csv – coffee selling information with various attributes and Values Sales in Local currency, Volume of Sales in cups.
+	FOREX.xlsx – currency exchange rate table.
+
+Basic level
+Task 1: 
+Create measures that calculate Value Sales in EUR, Values Sales in CHF.
+Visuals: 
+1) Matrix with data about Values Sales in EUR and CHF, volume of sales in cups (with distribution for Segments and Zones);
+2) Chart with sales in EUR per country and volume in cups;
+Treemap for top 10 Manufacturers by Sales in EUR;
+3) Chart with volumes (monthly) in cups with Trend Line;
+4) Cards with total sales in EUR and total volume cups sales.
+
+Slicers: 
+for Segments, active for all visualizations, inactive for cards with total sales in EUR and total volume cups sales.
+
+Additional requirement: 
+Please make sure all your visuals, elements etc. are formatted according to an example, keep same table or chart style, sorting order, totals on top etc.
+Color palette should be simple (different shades of one color are preferred).
+
+Advanced level
+
+Task 1: 
+Create measures that calculate Value Sales and displays value based on currency selected (Currency slicer).
+
+Time period aggregations:
+Definition - Moving Annual Total (MAT) finds the total value over the last 12 months. 
+	MAT TY (This Year) finds total value over the course of the previous 12 months, starting from the latest period available in current year (e.g. latest available period is Nov 2020, MAT TY calculates total of all values from Dec 1,2019 to Nov 30, 2020.)  
+	MAT YA (Year Ago) – total value over previous 12 months last year, starting from the same month as above of previous year (e.g. MAT YA calculates total of all values from Dec 1, 2018 to Nov 30, 2019).
+
+Task2: 
+Create measures that calculate MAT TY, MAT YA Value Sales and displays value based on currency selected (Currency slicer).
+
+Definition - Year to Date (YTD) finds total value of period of time beginning the first day of the reporting calendar year to the latest available month or date etc.  
+	YTD TY (This Year) - calculates total value, based on period that starts with the first day of the current calendar year to the latest available month or date etc. ( e.g., Jan 1,  2020 – Nov 30, 2020)  
+	YTD YA (Year Ago) - calculates total value for the same period as above of previous year (e.g., Jan 1, 2019 – Nov 30, 2019). 
+
+Task3: 
+Create measures that calculate YTD TY, YTD YA Value Sales and displays value based on currency selected (Currency slicer).
+
+Definition: Month to Date (MTD) finds total value of the period starting from the beginning of the current month up until now.  
+	MTD TY – total value for the latest available month (e.g. Nov 1 – Nov 30, 2020)  
+	MTD YA – finds total value of same period as above for previous year (e.g. Nov 1 – Nov 30, 2019).
+
+Task4: 
+Create measures that calculate MTD TY, MTD YA Value Sales and displays value based on currency selected (Currency slicer).
+
+Prepare:
+To group all Segments Ready to Drink and Roast & Ground as one group, leave the rest as is.
+
+Page 1 Visuals:  
+1)Matrix with MAT TY, MAT YA, MAT TY vs MAT YA (Abs), MAT TY vs MAT YA (%), share MAT 
+TY out of total calculations for every Segment (groups);
+2)Matrix with YTD TY, YTD YA, YTD TY vs YTD YA (Abs), YTD TY vs YTD YA (%), share YTD TY out of total calculations for every Segment (groups);
+3)Matrix with MTD TY, MTD YA, MTD TY vs MTD YA (Abs), MTD TY vs MTD YA (%), share MTD TY out of total calculations for every Segment (groups);
+Note: (Abs)-Absolute change of Value Sales, (%)-relative change of Value Sales.
+4)Matrix with Manufacturers and Sales MAT TY, Share MAT TY. 
+Show only top 5 Manufactures by MAT TY Share;
+5) Matrix with Manufacturers and Sales YTD TY, Share YTD TY. 
+Show only top 5 Manufactures by YTD TY Share;
+6)Matrix with Manufacturers and Sales MTD TY, Share MTD TY. 
+Show only top 5 Manufactures by MTD TY Share;
+7)Cards with Sales Value, Sales MAT TY, Sales YTD TY, Sales MTD TY.
+
+Slicers: 
+for region, for EUR or CHF selection (currency slicer). All slicers are active for all visualizations.
+Note: Share MAT TY, Share YTD TY and Share MTD TY must show results ignoring any filters that might have been applied (creating calculations on all the rows in a table).
+
+Page 2 Visuals:  
+1)Chart with Value sales by periods (months) of 2020 with aggregation column for MAT TY;
+2)Filled map with ability to select countries;
+3)Line and stacked column chart with MAT TY and Share MAT TY by countries.
+
+Slicers: 
+for region, for EUR or CHF selection active for all visualizations, synchronized with Page 1 slicers.
+
+Additional requirement:
+Please make sure all your visuals, elements etc. are formatted according to an example, keep same table or chart style, sorting order, totals on top etc.
+Color palette should be simple (different shades of one color are preferred).
